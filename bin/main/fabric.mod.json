@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "id": "enderthyst",
+  "version": "${version}",
+
+  "name": "Gayrudy's Ender Mod",
+  "description": "Introduces Enderthyst Armor along with Endermen trading!",
+  "authors": [
+    "FireBlaze12312",
+    "durpynose",
+    "Alphaone001",
+    "RottenPickle"
+  ],
+  "contact": {
+    "homepage": "",
+    "sources": ""
+  },
+
+  "license": "CC0-1.0",
+  "icon": "assets/enderthyst/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "fireblaze.ender.ore.EnderOre"
+    ]
+  },
+  "mixins": [
+    "enderthyst.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.7.4",
+    "fabric": "*",
+    "minecraft": "1.16.x"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
