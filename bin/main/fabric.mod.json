@@ -3,13 +3,13 @@
   "id": "enderthyst",
   "version": "${version}",
 
-  "name": "Gayrudy's Ender Mod",
-  "description": "Introduces Enderthyst Armor along with Endermen trading!",
+  "name": "Ender Mod",
+  "description": "Introduces Enderthyst along with Endermen trading!",
   "authors": [
     "FireBlaze12312",
     "durpynose",
     "Alphaone001",
-    "RottenPickle"
+    "not_a_Pickle"
   ],
   "contact": {
     "homepage": "",
