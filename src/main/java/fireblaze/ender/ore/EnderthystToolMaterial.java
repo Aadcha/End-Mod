@@ -10,7 +10,7 @@ public class EnderthystToolMaterial implements ToolMaterial {
 
     @Override
     public int getDurability() {
-        return 1000;
+        return 3065;
     }
 
     @Override

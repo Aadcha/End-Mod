@@ -17,12 +17,17 @@ public class EnderOre implements ModInitializer {
 		Registry.register(Registry.ITEM,new Identifier("enderthyst","enderthyst"),ENDERTHYST);
 
 		/** The enderthyst tools */
+
+		// A value of -1 for the attack damage will not change the default attack damage
+		// A value of 0 will add 1 to the default attack damage, a value of 1 will add 2, etc...
 		final int pickaxeAttackDamage = -1;
 		final int axeAttackDamage     =  4;
-		final int swordAttackDamage   = -4;
+		final int swordAttackDamage   =  3;
 		final int shovelAttackDamage  = -1;
 		final int hoeAttackDamage     = -1;
 
+		// MUST BE NEGATIVE: the closer the value is to 0 the faster it will "reload??"
+		// Swords should always be faster than axes
 		final float pickaxeAttackSpeed =  -2.0F;
 		final float axeAttackSpeed     =  -1.8F;
 		final float swordAttackSpeed   =  -1.5F;
