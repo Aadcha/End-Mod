@@ -50,12 +50,13 @@ public class EnderOre implements ModInitializer {
 		final float shovelAttackSpeed  =  -2.0F;
 		final float hoeAttackSpeed     =  -2.0F;
 
-		Registry.register(Registry.ITEM, new Identifier("enderthyst", "enderthyst_pickaxe"), new EnderthystPickaxe(new EnderthystToolMaterial(), pickaxeAttackDamage, pickaxeAttackSpeed, new Item.Settings().group(ItemGroup.TOOLS)));
-		Registry.register(Registry.ITEM, new Identifier("enderthyst", "enderthyst_axe"),     new     EnderthystAxe(new EnderthystToolMaterial(),     axeAttackDamage,     axeAttackSpeed, new Item.Settings().group(ItemGroup.TOOLS)));
-		Registry.register(Registry.ITEM, new Identifier("enderthyst", "enderthyst_sword"),   new   EnderthystSword(new EnderthystToolMaterial(),   swordAttackDamage,   swordAttackSpeed, new Item.Settings().group(ItemGroup.TOOLS)));
-		Registry.register(Registry.ITEM, new Identifier("enderthyst", "enderthyst_shovel"),  new  EnderthystShovel(new EnderthystToolMaterial(),  shovelAttackDamage,  shovelAttackSpeed, new Item.Settings().group(ItemGroup.TOOLS)));
-		Registry.register(Registry.ITEM, new Identifier("enderthyst", "enderthyst_hoe"),     new     EnderthystHoe(new EnderthystToolMaterial(),     hoeAttackDamage,     hoeAttackSpeed, new Item.Settings().group(ItemGroup.TOOLS)));
+		Registry.register(Registry.ITEM, new Identifier("enderthyst", "enderthyst_pickaxe"), new	 EnderthystPickaxe(new EnderthystToolMaterial(), pickaxeAttackDamage, pickaxeAttackSpeed, new Item.Settings().group(ItemGroup.TOOLS)));
+		Registry.register(Registry.ITEM, new Identifier("enderthyst", "enderthyst_axe"),     new	     EnderthystAxe(new EnderthystToolMaterial(),     axeAttackDamage,     axeAttackSpeed, new Item.Settings().group(ItemGroup.TOOLS)));
+		Registry.register(Registry.ITEM, new Identifier("enderthyst", "enderthyst_sword"),   new	   EnderthystSword(new EnderthystToolMaterial(),   swordAttackDamage,   swordAttackSpeed, new Item.Settings().group(ItemGroup.TOOLS)));
+		Registry.register(Registry.ITEM, new Identifier("enderthyst", "enderthyst_shovel"),  new	  EnderthystShovel(new EnderthystToolMaterial(),  shovelAttackDamage,  shovelAttackSpeed, new Item.Settings().group(ItemGroup.TOOLS)));
+		Registry.register(Registry.ITEM, new Identifier("enderthyst", "enderthyst_hoe"),     new	     EnderthystHoe(new EnderthystToolMaterial(),     hoeAttackDamage,     hoeAttackSpeed, new Item.Settings().group(ItemGroup.TOOLS)));
 
+		/** Enderthyst ore */
 		Registry.register(Registry.BLOCK, new Identifier("enderthyst", "enderthyst_ore"), ENDERTHYST_ORE);
 		Registry.register(Registry.ITEM, new Identifier("enderthyst", "enderthyst_ore"), new BlockItem(ENDERTHYST_ORE, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
 
