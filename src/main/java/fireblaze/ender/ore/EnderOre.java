@@ -9,12 +9,12 @@ import net.minecraft.util.Identifier;
 
 public class EnderOre implements ModInitializer {
 
-	public static final Item ENDERTHYST = new Item(new Item.Settings().group(ItemGroup.MATERIALS));
+	public static final Item ENDERTHYST_SHARD = new Item(new Item.Settings().group(ItemGroup.MATERIALS));
 
 	@Override
 	public void onInitialize() {
 
-		Registry.register(Registry.ITEM,new Identifier("enderthyst","enderthyst"),ENDERTHYST);
+		Registry.register(Registry.ITEM,new Identifier("enderthyst","enderthyst_shard"),ENDERTHYST_SHARD);
 
 		/** The enderthyst tools */
 
