@@ -14,7 +14,14 @@ public class EnderOre implements ModInitializer {
 	@Override
 	public void onInitialize() {
 
-	Registry.register(Registry.ITEM,new Identifier("enderthyst","enderthyst"),ENDERTHYST);
+		Registry.register(Registry.ITEM,new Identifier("enderthyst","enderthyst"),ENDERTHYST);
+
+		/** The enderthyst tools */
+		Registry.register(Registry.ITEM, new Identifier("enderthyst", "enderthyst_pickaxe"), new EnderthystPickaxe(new EnderthystToolMaterial(), -1, 2, new Item.Settings().group(ItemGroup.TOOLS)));
+		Registry.register(Registry.ITEM, new Identifier("enderthyst", "enderthyst_axe"),     new     EnderthystAxe(new EnderthystToolMaterial(), -1, 2, new Item.Settings().group(ItemGroup.TOOLS)));
+		Registry.register(Registry.ITEM, new Identifier("enderthyst", "enderthyst_sword"),   new   EnderthystSword(new EnderthystToolMaterial(), -1, 2, new Item.Settings().group(ItemGroup.TOOLS)));
+		Registry.register(Registry.ITEM, new Identifier("enderthyst", "enderthyst_shovel"),  new  EnderthystShovel(new EnderthystToolMaterial(), -1, 2, new Item.Settings().group(ItemGroup.TOOLS)));
+		Registry.register(Registry.ITEM, new Identifier("enderthyst", "enderthyst_hoe"),     new     EnderthystHoe(new EnderthystToolMaterial(), -1, 2, new Item.Settings().group(ItemGroup.TOOLS)));
 
 	}
 }
