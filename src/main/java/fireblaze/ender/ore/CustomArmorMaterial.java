@@ -46,16 +46,14 @@ public enum CustomArmorMaterial implements ArmorMaterial {
         this.repairIngredientSupplier = new Lazy(supplier_1);
     }
 
-    // Must implememnt these since we are implementing ArmorMaterial
+    // Must implement these since we are implementing ArmorMaterial
     @Override
     public int getDurability(EquipmentSlot slot) {
         return BASE_DURABILITY[slot.getEntitySlotId()] * this.durabilityMultiplier;
     }
 
     @Override
-    public int getProtectionAmount(EquipmentSlot slot) {
-        return this.protectionAmounts[slot.getEntitySlotId()];
-    }
+    public int getProtectionAmount(EquipmentSlot slot) { return this.protectionAmounts[slot.getEntitySlotId()]; }
 
     @Override
     public int getEnchantability() { return this.enchantability; }
