@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "id": "enderthyst",
+  "version": "${version}",
+
+  "name": "The Ender Mod",
+  "description": "Introduces Enderthyst along with Endermen trading!",
+  "authors": [
+    "FireBlaze12312",
+    "durpynose",
+    "Alphaone001",
+    "not_a_Pickle"
+  ],
+  "contact": {
+    "homepage": "",
+    "sources": ""
+  },
+
+  "license": "CC0-1.0",
+  "icon": "assets/enderthyst/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "fireblaze.ender.ore.EnderOre"
+    ]
+  },
+  "mixins": [
+    "enderthyst.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.7.4",
+    "fabric": "*",
+    "minecraft": "1.16.x"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
