@@ -131,20 +131,28 @@ public class EnderOre implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+
+
+
 		//Register Acid Stuff
-		STILL_ACID = Registry.register(Registry.FLUID, new Identifier("enderthyst", "acid"), new fluidimplementation.Still());
-		FLOWING_ACID = Registry.register(Registry.FLUID, new Identifier("enderthyst", "flowing_acid"), new fluidimplementation.Flowing());
+		STILL_ACID = Registry.register(Registry.FLUID, new Identifier("enderthyst", "acid"), new FluidImplementation.Still());
+		FLOWING_ACID = Registry.register(Registry.FLUID, new Identifier("enderthyst", "flowing_acid"), new FluidImplementation.Flowing());
 		ACID_BUCKET = Registry.register(Registry.ITEM, new Identifier("enderthyst", "acid_bucket"), new BucketItem(STILL_ACID, new Item.Settings().recipeRemainder(Items.BUCKET).maxCount(1)));
 		ACID = Registry.register(Registry.BLOCK, new Identifier("enderthyst", "acid"), new FluidBlock(STILL_ACID, FabricBlockSettings.copy(Blocks.WATER)){});
+
 		Registry.register(Registry.ITEM, new Identifier("enderthyst", "acid"), new BlockItem(ACID, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
 		setupFluidRendering(EnderOre.STILL_ACID, EnderOre.FLOWING_ACID, new Identifier("minecraft", "water"), 0x4CC248);
 		BlockRenderLayerMap.INSTANCE.putFluids(RenderLayer.getTranslucent(), EnderOre.STILL_ACID, EnderOre.FLOWING_ACID);
 
+
+
 		//Register Enderthyst stuff
 		Registry.register(Registry.ITEM,new Identifier("enderthyst","enderthyst_shard"), ENDERTHYST_SHARD);
 		Registry.register(Registry.ITEM,new Identifier("enderthyst","enderthyst_ingot"), ENDERTHYST_INGOT);
-		/** The enderthyst tools */
 
+
+
+		// The enderthyst tools
 		// A value of -1 for the attack damage will not change the default attack damage
 		// A value of 0 will add 1 to the default attack damage, a value of 1 will add 2, etc...
 		final int pickaxeAttackDamage = -1;
@@ -168,13 +176,19 @@ public class EnderOre implements ModInitializer {
 		Registry.register(Registry.ITEM, new Identifier("enderthyst", "enderthyst_shovel"),  new  EnderthystShovel(new EnderthystToolMaterial(),  shovelAttackDamage,  shovelAttackSpeed, new Item.Settings().group(ItemGroup.TOOLS)));
 		Registry.register(Registry.ITEM, new Identifier("enderthyst", "enderthyst_hoe"),     new     EnderthystHoe(new EnderthystToolMaterial(),     hoeAttackDamage,     hoeAttackSpeed, new Item.Settings().group(ItemGroup.TOOLS)));
 
-		
+
+
+
+
 		// Register the armor
         Registry.register(Registry.ITEM, new Identifier("enderthyst",       "enderthyst_helmet"),   ENDERTHYST_HELMET);
         Registry.register(Registry.ITEM, new Identifier("enderthyst",   "enderthyst_chestplate"),   ENDERTHYST_CHESTPLATE);
         Registry.register(Registry.ITEM, new Identifier("enderthyst",     "enderthyst_leggings"),   ENDERTHYST_LEGGINGS);
         Registry.register(Registry.ITEM, new Identifier("enderthyst",        "enderthyst_boots"),   ENDERTHYST_BOOTS);
-		
+
+
+
+
 		// Register the block
 		Registry.register(Registry.BLOCK, new Identifier("enderthyst", "enderthyst_ore"), ENDERTHYST_ORE);
 		Registry.register(Registry.ITEM, new Identifier("enderthyst", "enderthyst_ore"), new BlockItem(ENDERTHYST_ORE, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
