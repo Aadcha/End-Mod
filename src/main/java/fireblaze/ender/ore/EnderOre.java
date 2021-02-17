@@ -52,6 +52,8 @@ import net.minecraft.fluid.FluidState;
 
 
 public class EnderOre implements ModInitializer {
+
+
 	//acid lake
 	public static FlowableFluid STILL_ACID;
 	public static FlowableFluid FLOWING_ACID;
@@ -132,8 +134,6 @@ public class EnderOre implements ModInitializer {
 	@Override
 	public void onInitialize() {
 
-
-
 		//Register Acid Stuff
 		STILL_ACID = Registry.register(Registry.FLUID, new Identifier("enderthyst", "acid"), new FluidImplementation.Still());
 		FLOWING_ACID = Registry.register(Registry.FLUID, new Identifier("enderthyst", "flowing_acid"), new FluidImplementation.Flowing());
@@ -145,11 +145,9 @@ public class EnderOre implements ModInitializer {
 		BlockRenderLayerMap.INSTANCE.putFluids(RenderLayer.getTranslucent(), EnderOre.STILL_ACID, EnderOre.FLOWING_ACID);
 
 
-
 		//Register Enderthyst stuff
 		Registry.register(Registry.ITEM,new Identifier("enderthyst","enderthyst_shard"), ENDERTHYST_SHARD);
 		Registry.register(Registry.ITEM,new Identifier("enderthyst","enderthyst_ingot"), ENDERTHYST_INGOT);
-
 
 
 		// The enderthyst tools
@@ -176,18 +174,11 @@ public class EnderOre implements ModInitializer {
 		Registry.register(Registry.ITEM, new Identifier("enderthyst", "enderthyst_shovel"),  new  EnderthystShovel(new EnderthystToolMaterial(),  shovelAttackDamage,  shovelAttackSpeed, new Item.Settings().group(ItemGroup.TOOLS)));
 		Registry.register(Registry.ITEM, new Identifier("enderthyst", "enderthyst_hoe"),     new     EnderthystHoe(new EnderthystToolMaterial(),     hoeAttackDamage,     hoeAttackSpeed, new Item.Settings().group(ItemGroup.TOOLS)));
 
-
-
-
-
 		// Register the armor
 		Registry.register(Registry.ITEM, new Identifier("enderthyst",       "enderthyst_helmet"),   ENDERTHYST_HELMET);
 		Registry.register(Registry.ITEM, new Identifier("enderthyst",   "enderthyst_chestplate"),   ENDERTHYST_CHESTPLATE);
 		Registry.register(Registry.ITEM, new Identifier("enderthyst",     "enderthyst_leggings"),   ENDERTHYST_LEGGINGS);
 		Registry.register(Registry.ITEM, new Identifier("enderthyst",        "enderthyst_boots"),   ENDERTHYST_BOOTS);
-
-
-
 
 		// Register the block
 		Registry.register(Registry.BLOCK, new Identifier("enderthyst", "enderthyst_ore"), ENDERTHYST_ORE);

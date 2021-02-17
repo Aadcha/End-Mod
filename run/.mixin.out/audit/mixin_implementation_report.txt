@@ -1,5 +1,1 @@
-<<<<<<< HEAD
-Mixin Implementation Report generated on 2021-02-17 07:51:12
-=======
-Mixin Implementation Report generated on 2021-02-17 08:35:13
->>>>>>> Acid
+Mixin Implementation Report generated on 2021-02-17 09:56:38
