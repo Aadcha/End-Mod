@@ -1,0 +1,10 @@
+{
+    "type": "minecraft:smelting",
+    "ingredient": {
+        "item": "enderthyst:enderthyst_ore"
+    },
+    "result": "enderthyst:enderthyst_shard",
+    "experience": 0.1,
+    "cookingtime": 200,
+    "group": "enderthyst"
+}

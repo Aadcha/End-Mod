@@ -38,6 +38,8 @@ public class EnderOre implements ModInitializer {
 
 	public static final Item ENDERTHYST_SHARD = new Item(new Item.Settings().group(ItemGroup.MATERIALS));
 	public static final Block ENDERTHYST_ORE = new EnderthystOreBlock(FabricBlockSettings.copy(Blocks.ANCIENT_DEBRIS));
+	public static final Item ENDERTHYST_INGOT = new Item(new Item.Settings().group(ItemGroup.MATERIALS));
+
 	private static final ConfiguredFeature<?,?> ENDERTHYST_ORE_END = Feature.ORE.configure(new OreFeatureConfig(new BlockMatchRuleTest(Blocks.END_STONE), ENDERTHYST_ORE.getDefaultState(),9)).decorate(Decorator.RANGE.configure(new RangeDecoratorConfig(0,0,240))).spreadHorizontally().repeat(20);
 
 	// Armor Variables
@@ -45,13 +47,13 @@ public class EnderOre implements ModInitializer {
 	public static final Item ENDERTHYST_CHESTPLATE = new ArmorItem(CustomArmorMaterial.ENDERTHYST, EquipmentSlot.CHEST, new Item.Settings().group(ItemGroup.COMBAT));
 	public static final Item ENDERTHYST_LEGGINGS   = new ArmorItem(CustomArmorMaterial.ENDERTHYST,  EquipmentSlot.LEGS, new Item.Settings().group(ItemGroup.COMBAT));
 	public static final Item ENDERTHYST_BOOTS      = new ArmorItem(CustomArmorMaterial.ENDERTHYST,  EquipmentSlot.FEET, new Item.Settings().group(ItemGroup.COMBAT));
-
+	
 
 	@Override
 	public void onInitialize() {
 
 		Registry.register(Registry.ITEM,new Identifier("enderthyst","enderthyst_shard"), ENDERTHYST_SHARD);
-
+		Registry.register(Registry.ITEM,new Identifier("enderthyst","enderthyst_ingot"), ENDERTHYST_INGOT); 
 		/** The enderthyst tools */
 		// A value of -1 for the attack damage will not change the default attack damage
 		// A value of 0 will add 1 to the default attack damage, a value of 1 will add 2, etc...
