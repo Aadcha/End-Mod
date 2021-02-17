@@ -1,17 +1,12 @@
-
 {
-    "type": "minecraft:crafting_shapeless",
-    "ingredients": [
-        {
-            "item": "enderthyst:enderthyst_ingot"
-        },
-        {
-            "item": "minecraft:netherite_shovel"
-        }
-    ],
-    "result": {
-        "item": "enderthyst:enderthyst_shovel",
-        "count": 1
+    "type": "minecraft:smithing",
+    "base": {
+        "item": "minecraft:netherite_shovel"
     },
-    "group": "enderthyst"
+    "addition": {
+        "item": "enderthyst:enderthyst_ingot"
+    },
+    "result": {
+        "item": "enderthyst:enderthyst_shovel"
+    }
 }
