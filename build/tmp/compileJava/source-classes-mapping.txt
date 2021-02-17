@@ -1,0 +1,29 @@
+fireblaze/ender/ore/EnderthystShovel.java
+ fireblaze.ender.ore.EnderthystShovel
+fireblaze/ender/ore/EnderthystPickaxe.java
+ fireblaze.ender.ore.EnderthystPickaxe
+fireblaze/ender/ore/EnderthystSword.java
+ fireblaze.ender.ore.EnderthystSword
+fireblaze/ender/ore/abstractfluid.java
+ fireblaze.ender.ore.abstractfluid
+fireblaze/ender/ore/EnderthystAxe.java
+ fireblaze.ender.ore.EnderthystAxe
+fireblaze/ender/ore/EnderthystHoe.java
+ fireblaze.ender.ore.EnderthystHoe
+fireblaze/ender/ore/CustomArmorMaterial.java
+ fireblaze.ender.ore.CustomArmorMaterial
+fireblaze/ender/ore/EnderthystOreBlock.java
+ fireblaze.ender.ore.EnderthystOreBlock
+fireblaze/ender/ore/EnderthystToolMaterial.java
+ fireblaze.ender.ore.EnderthystToolMaterial
+fireblaze/ender/ore/mixin/ExampleMixin.java
+ fireblaze.ender.ore.mixin.ExampleMixin
+fireblaze/ender/ore/EnderOre.java
+ fireblaze.ender.ore.EnderOre
+ fireblaze.ender.ore.EnderOre$1
+ fireblaze.ender.ore.EnderOre$2
+ fireblaze.ender.ore.EnderOre$3
+fireblaze/ender/ore/fluidimplementation.java
+ fireblaze.ender.ore.fluidimplementation
+ fireblaze.ender.ore.fluidimplementation$Flowing
+ fireblaze.ender.ore.fluidimplementation$Still
