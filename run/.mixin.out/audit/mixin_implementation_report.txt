@@ -1,5 +1,1 @@
-<<<<<<< HEAD
-Mixin Implementation Report generated on 2021-02-16 12:38:44
-=======
-Mixin Implementation Report generated on 2021-02-16 17:13:09
->>>>>>> EnderthystCrafting
+Mixin Implementation Report generated on 2021-02-16 21:25:09
