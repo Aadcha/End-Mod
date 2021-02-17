@@ -1,0 +1,20 @@
+{
+    "type": "enderthyst:crafting_shaped",
+    "pattern": [
+      "WWW",
+      "WDD",
+      "DD "
+    ],
+    "key": {
+      "W": {
+        "item": "enderthyst:enderthyst_shard"
+      },
+      "D": {
+        "item": "minecraft:diamond"
+      }
+    },
+    "result": {
+      "item": "enderthyst ingot",
+      "count": 1
+    }
+  }
