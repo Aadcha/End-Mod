@@ -20,9 +20,6 @@ public abstract class abstractfluid extends FlowableFluid
         return fluid == getStill() || fluid == getFlowing();
     }
  
-    /**
-     * @return is the fluid infinite like water?
-     */
     @Override
     protected boolean isInfinite()
     {

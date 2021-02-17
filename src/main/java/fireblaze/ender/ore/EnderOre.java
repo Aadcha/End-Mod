@@ -1,5 +1,7 @@
 package fireblaze.ender.ore;
 
+import java.util.function.Function;
+
 import net.fabricmc.api.ModInitializer;
 
 import net.fabricmc.fabric.api.biome.v1.BiomeModifications;
@@ -55,7 +57,8 @@ public class EnderOre implements ModInitializer {
 	public static FlowableFluid FLOWING_ACID;
  
 	public static Item ACID_BUCKET;
-	public static Block ACID = new EnderthystOreBlock(FabricBlockSettings.copy(Blocks.WATER));
+	//public static Block ACID = new EnderthystOreBlock(FabricBlockSettings.copy(Blocks.WATER));
+	public static Block ACID; 
 
 	//Enderthyst stuff
 	public static final Item ENDERTHYST_SHARD = new Item(new Item.Settings().group(ItemGroup.MATERIALS));
@@ -69,6 +72,62 @@ public class EnderOre implements ModInitializer {
 	public static final Item ENDERTHYST_LEGGINGS   = new ArmorItem(CustomArmorMaterial.ENDERTHYST,  EquipmentSlot.LEGS, new Item.Settings().group(ItemGroup.COMBAT));
 	public static final Item ENDERTHYST_BOOTS      = new ArmorItem(CustomArmorMaterial.ENDERTHYST,  EquipmentSlot.FEET, new Item.Settings().group(ItemGroup.COMBAT));
 
+	//Acid Render method
+	public static void setupFluidRendering (final Fluid still, final Fluid flowing, final Identifier textureFluidId, final int color) {
+		final Identifier stillSpriteId = new Identifier(textureFluidId.getNamespace(), "block/" + textureFluidId.getPath() + "_still");
+		final Identifier flowingSpriteId = new Identifier(textureFluidId.getNamespace(), "block/" + textureFluidId.getPath() + "_flow");
+	 
+		// If they're not already present, add the sprites to the block atlas
+		ClientSpriteRegistryCallback.event(SpriteAtlasTexture.BLOCK_ATLAS_TEXTURE).register((atlasTexture, registry) ->
+		{
+			registry.register(stillSpriteId);
+			registry.register(flowingSpriteId);
+		});
+ 
+		final Identifier fluidId = Registry.FLUID.getId(still);
+		final Identifier listenerId = new Identifier(fluidId.getNamespace(), fluidId.getPath() + "_reload_listener");
+ 
+		final Sprite[] fluidSprites = { null, null };
+ 
+		ResourceManagerHelper.get(ResourceType.CLIENT_RESOURCES).registerReloadListener(new SimpleSynchronousResourceReloadListener()
+		{
+			@Override
+			public Identifier getFabricId()
+			{
+				return listenerId;
+			}
+ 
+			/**
+			 * Get the sprites from the block atlas when resources are reloaded
+			 */
+			@Override
+			public void apply(ResourceManager resourceManager)
+			{
+				final Function<Identifier, Sprite> atlas = MinecraftClient.getInstance().getSpriteAtlas(SpriteAtlasTexture.BLOCK_ATLAS_TEXTURE);
+				fluidSprites[0] = atlas.apply(stillSpriteId);
+				fluidSprites[1] = atlas.apply(flowingSpriteId);
+			}
+		});
+ 
+		// The FluidRenderer gets the sprites and color from a FluidRenderHandler during rendering
+		final FluidRenderHandler renderHandler = new FluidRenderHandler()
+		{
+			@Override
+			public Sprite[] getFluidSprites(BlockRenderView view, BlockPos pos, FluidState state)
+			{
+				return fluidSprites;
+			}
+ 
+			@Override
+			public int getFluidColor(BlockRenderView view, BlockPos pos, FluidState state)
+			{
+				return color;
+			}
+		};
+ 
+		FluidRenderHandlerRegistry.INSTANCE.register(still, renderHandler);
+		FluidRenderHandlerRegistry.INSTANCE.register(flowing, renderHandler);
+	}
 
 	@Override
 	public void onInitialize() {
@@ -76,69 +135,10 @@ public class EnderOre implements ModInitializer {
 		STILL_ACID = Registry.register(Registry.FLUID, new Identifier("enderthyst", "acid"), new fluidimplementation.Still());
 		FLOWING_ACID = Registry.register(Registry.FLUID, new Identifier("enderthyst", "flowing_acid"), new fluidimplementation.Flowing());
 		ACID_BUCKET = Registry.register(Registry.ITEM, new Identifier("enderthyst", "acid_bucket"), new BucketItem(STILL_ACID, new Item.Settings().recipeRemainder(Items.BUCKET).maxCount(1)));
-		Registry.register(Registry.BLOCK, new Identifier("enderthyst", "acid"), new FluidBlock(STILL_ACID, FabricBlockSettings.copy(Blocks.WATER)){});
+		ACID = Registry.register(Registry.BLOCK, new Identifier("enderthyst", "acid"), new FluidBlock(STILL_ACID, FabricBlockSettings.copy(Blocks.WATER)){});
 		Registry.register(Registry.ITEM, new Identifier("enderthyst", "acid"), new BlockItem(ACID, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
 		setupFluidRendering(EnderOre.STILL_ACID, EnderOre.FLOWING_ACID, new Identifier("minecraft", "water"), 0x4CC248);
 		BlockRenderLayerMap.INSTANCE.putFluids(RenderLayer.getTranslucent(), EnderOre.STILL_ACID, EnderOre.FLOWING_ACID);
-
-		//Acid Render method
-		private static void setupFluidRendering(final Fluid still; final Fluid flowing; final Identifier textureFluidId; final int color)
-		{
-			final Identifier stillSpriteId = new Identifier(textureFluidId.getNamespace(), "block/" + textureFluidId.getPath() + "_still");
-			final Identifier flowingSpriteId = new Identifier(textureFluidId.getNamespace(), "block/" + textureFluidId.getPath() + "_flow");
-	 
-			// If they're not already present, add the sprites to the block atlas
-			ClientSpriteRegistryCallback.event(SpriteAtlasTexture.BLOCK_ATLAS_TEXTURE).register((atlasTexture, registry) ->
-			{
-				registry.register(stillSpriteId);
-				registry.register(flowingSpriteId);
-			});
-	 
-			final Identifier fluidId = Registry.FLUID.getId(still);
-			final Identifier listenerId = new Identifier(fluidId.getNamespace(), fluidId.getPath() + "_reload_listener");
-	 
-			final Sprite[] fluidSprites = { null, null };
-	 
-			ResourceManagerHelper.get(ResourceType.CLIENT_RESOURCES).addReloadListener(new SimpleSynchronousResourceReloadListener()
-			{
-				@Override
-				public Identifier getFabricId()
-				{
-					return listenerId;
-				}
-	 
-				/**
-				 * Get the sprites from the block atlas when resources are reloaded
-				 */
-				@Override
-				public void apply(ResourceManager resourceManager)
-				{
-					final Function<Identifier, Sprite> atlas = MinecraftClient.getInstance().getSpriteAtlas(SpriteAtlasTexture.BLOCK_ATLAS_TEXTURE);
-					fluidSprites[0] = atlas.apply(stillSpriteId);
-					fluidSprites[1] = atlas.apply(flowingSpriteId);
-				}
-			});
-	 
-			// The FluidRenderer gets the sprites and color from a FluidRenderHandler during rendering
-			final FluidRenderHandler renderHandler = new FluidRenderHandler()
-			{
-				@Override
-				public Sprite[] getFluidSprites(BlockRenderView view, BlockPos pos, FluidState state)
-				{
-					return fluidSprites;
-				}
-	 
-				@Override
-				public int getFluidColor(BlockRenderView view, BlockPos pos, FluidState state)
-				{
-					return color;
-				}
-			};
-	 
-			FluidRenderHandlerRegistry.INSTANCE.register(still, renderHandler);
-			FluidRenderHandlerRegistry.INSTANCE.register(flowing, renderHandler);
-		}
-
 
 		//Register Enderthyst stuff
 		Registry.register(Registry.ITEM,new Identifier("enderthyst","enderthyst_shard"), ENDERTHYST_SHARD);
@@ -184,5 +184,5 @@ public class EnderOre implements ModInitializer {
 		BiomeModifications.addFeature(BiomeSelectors.foundInTheEnd(), GenerationStep.Feature.UNDERGROUND_ORES, enderthystOreEnd);
 
 	}
-
+	
 }
