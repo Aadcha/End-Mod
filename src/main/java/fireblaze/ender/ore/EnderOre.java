@@ -141,7 +141,7 @@ public class EnderOre implements ModInitializer {
 		ACID = Registry.register(Registry.BLOCK, new Identifier("enderthyst", "acid"), new FluidBlock(STILL_ACID, FabricBlockSettings.copy(Blocks.WATER)){});
 
 		Registry.register(Registry.ITEM, new Identifier("enderthyst", "acid"), new BlockItem(ACID, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
-		setupFluidRendering(EnderOre.STILL_ACID, EnderOre.FLOWING_ACID, new Identifier("minecraft", "water"), 0x4CC248);
+		setupFluidRendering(EnderOre.STILL_ACID, EnderOre.FLOWING_ACID, new Identifier("minecraft", "water"), 0x4A37B6);
 		BlockRenderLayerMap.INSTANCE.putFluids(RenderLayer.getTranslucent(), EnderOre.STILL_ACID, EnderOre.FLOWING_ACID);
 
 
