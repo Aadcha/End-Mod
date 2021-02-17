@@ -20,7 +20,7 @@ public enum CustomArmorMaterial implements ArmorMaterial {
 
     // I honestly don't know what type of syntax this is... It's supposed to be an enum ¯\_(ツ)_/¯
      ENDERTHYST("enderthyst", 40, new int[] {6, 9, 11, 6}, 30, SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE, 1.0F, () -> {
-         return Ingredient.ofItems(Items.GUNPOWDER);
+         return Ingredient.ofItems(Items.DIAMOND);
      });
 
     // Base durability is multiplied by the durabilityMultiplier, I have no idea why

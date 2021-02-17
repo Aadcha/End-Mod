@@ -64,9 +64,12 @@ public class EnderOre implements ModInitializer {
 
 	//Enderthyst stuff
 	public static final Item ENDERTHYST_SHARD = new Item(new Item.Settings().group(ItemGroup.MATERIALS));
-	public static final Block ENDERTHYST_ORE = new EnderthystOreBlock(FabricBlockSettings.copy(Blocks.ANCIENT_DEBRIS));
 	public static final Item ENDERTHYST_INGOT = new Item(new Item.Settings().group(ItemGroup.MATERIALS));
+
+	public static final Block ENDERTHYST_ORE = new EnderthystOreBlock(FabricBlockSettings.copy(Blocks.ANCIENT_DEBRIS));
 	private static ConfiguredFeature<?,?> ENDERTHYST_ORE_END = Feature.ORE.configure(new OreFeatureConfig(new BlockMatchRuleTest(Blocks.END_STONE), ENDERTHYST_ORE.getDefaultState(),9)).decorate(Decorator.RANGE.configure(new RangeDecoratorConfig(0,0,240))).spreadHorizontally().repeat(20);
+
+
 
 	// Armor Variables
 	public static final Item ENDERTHYST_HELMET     = new ArmorItem(CustomArmorMaterial.ENDERTHYST,  EquipmentSlot.HEAD, new Item.Settings().group(ItemGroup.COMBAT));
@@ -127,7 +130,7 @@ public class EnderOre implements ModInitializer {
 			}
 		};
 
-		FluidRenderHandlerRegistry.INSTANCE.register(still, renderHandler);
+		FluidRenderHandlerRegistry.INSTANCE.register(still,   renderHandler);
 		FluidRenderHandlerRegistry.INSTANCE.register(flowing, renderHandler);
 	}
 
@@ -135,9 +138,9 @@ public class EnderOre implements ModInitializer {
 	public void onInitialize() {
 
 		//Register Acid Stuff
-		STILL_ACID = Registry.register(Registry.FLUID, new Identifier("enderthyst", "acid"), new FluidImplementation.Still());
+		STILL_ACID   = Registry.register(Registry.FLUID, new Identifier("enderthyst",         "acid"), new FluidImplementation.Still());
 		FLOWING_ACID = Registry.register(Registry.FLUID, new Identifier("enderthyst", "flowing_acid"), new FluidImplementation.Flowing());
-		ACID_BUCKET = Registry.register(Registry.ITEM, new Identifier("enderthyst", "acid_bucket"), new BucketItem(STILL_ACID, new Item.Settings().recipeRemainder(Items.BUCKET).maxCount(1)));
+		ACID_BUCKET  = Registry.register(Registry.ITEM,  new Identifier("enderthyst",  "acid_bucket"), new BucketItem(STILL_ACID, new Item.Settings().recipeRemainder(Items.BUCKET).maxCount(1)));
 		ACID = Registry.register(Registry.BLOCK, new Identifier("enderthyst", "acid"), new FluidBlock(STILL_ACID, FabricBlockSettings.copy(Blocks.WATER)){});
 
 		Registry.register(Registry.ITEM, new Identifier("enderthyst", "acid"), new BlockItem(ACID, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
@@ -182,7 +185,7 @@ public class EnderOre implements ModInitializer {
 
 		// Register the block
 		Registry.register(Registry.BLOCK, new Identifier("enderthyst", "enderthyst_ore"), ENDERTHYST_ORE);
-		Registry.register(Registry.ITEM, new Identifier("enderthyst", "enderthyst_ore"), new BlockItem(ENDERTHYST_ORE, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
+		Registry.register(Registry.ITEM,  new Identifier("enderthyst", "enderthyst_ore"), new BlockItem(ENDERTHYST_ORE, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
 
 		RegistryKey<ConfiguredFeature<?,?>> enderthystOreEnd = RegistryKey.of(Registry.CONFIGURED_FEATURE_WORLDGEN, new Identifier("enderthyst", "enderthyst_ore_end"));
 		Registry.register(BuiltinRegistries.CONFIGURED_FEATURE, enderthystOreEnd.getValue(), ENDERTHYST_ORE_END);
