@@ -59,8 +59,8 @@ public class EnderOre implements ModInitializer {
 	public static FlowableFluid FLOWING_ACID;
 
 	public static Item ACID_BUCKET;
-	//public static Block ACID = new EnderthystOreBlock(FabricBlockSettings.copy(Blocks.WATER));
-	public static Block ACID;
+	public static Block ACID = new EnderthystOreBlock(FabricBlockSettings.copy(Blocks.WATER));
+	//public static Block ACID;
 
 	//Enderthyst stuff
 	public static final Item ENDERTHYST_SHARD = new Item(new Item.Settings().group(ItemGroup.MATERIALS));
@@ -140,11 +140,11 @@ public class EnderOre implements ModInitializer {
 		//Register Acid Stuff
 		STILL_ACID   = Registry.register(Registry.FLUID, new Identifier("enderthyst",         "acid"), new FluidImplementation.Still());
 		FLOWING_ACID = Registry.register(Registry.FLUID, new Identifier("enderthyst", "flowing_acid"), new FluidImplementation.Flowing());
-		ACID_BUCKET  = Registry.register(Registry.ITEM,  new Identifier("enderthyst",  "acid_bucket"), new BucketItem(STILL_ACID, new Item.Settings().recipeRemainder(Items.BUCKET).maxCount(1)));
+		ACID_BUCKET  = Registry.register(Registry.ITEM,  new Identifier("enderthyst",  "acid_bucket"), new BucketItem(STILL_ACID, new Item.Settings().recipeRemainder(Items.BUCKET).maxCount(1).group(ItemGroup.BUILDING_BLOCKS)));
 		ACID = Registry.register(Registry.BLOCK, new Identifier("enderthyst", "acid"), new FluidBlock(STILL_ACID, FabricBlockSettings.copy(Blocks.WATER)){});
 
-		Registry.register(Registry.ITEM, new Identifier("enderthyst", "acid"), new BlockItem(ACID, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
-		setupFluidRendering(EnderOre.STILL_ACID, EnderOre.FLOWING_ACID, new Identifier("minecraft", "water"), 0x4A37B6);
+		//Registry.register(Registry.ITEM, new Identifier("enderthyst", "acid"), new BlockItem(ACID, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
+		setupFluidRendering(EnderOre.STILL_ACID, EnderOre.FLOWING_ACID, new Identifier("minecraft", "water"), 0xBF5FFF);
 		BlockRenderLayerMap.INSTANCE.putFluids(RenderLayer.getTranslucent(), EnderOre.STILL_ACID, EnderOre.FLOWING_ACID);
 
 
