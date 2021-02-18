@@ -1,0 +1,74 @@
+---- Minecraft Crash Report ----
+// I just don't know what went wrong :(
+
+Time: 2/17/21, 11:27 PM
+Description: Initializing game
+
+java.lang.UnsatisfiedLinkError: Failed to locate library: liblwjgl.dylib
+	at org.lwjgl.system.Library.loadSystem(Library.java:147)
+	at org.lwjgl.system.Library.loadSystem(Library.java:67)
+	at org.lwjgl.system.Library.<clinit>(Library.java:50)
+	at org.lwjgl.system.MemoryUtil.<clinit>(MemoryUtil.java:97)
+	at org.lwjgl.system.Pointer$Default.<clinit>(Pointer.java:61)
+	at net.minecraft.client.util.Window.acceptError(Window.java:131)
+	at com.mojang.blaze3d.platform.GLX._initGlfw(GLX.java:73)
+	at com.mojang.blaze3d.systems.RenderSystem.initBackendSystem(RenderSystem.java:586)
+	at net.minecraft.client.MinecraftClient.<init>(MinecraftClient.java:432)
+	at net.minecraft.client.main.Main.main(Main.java:149)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at net.fabricmc.loader.game.MinecraftGameProvider.launch(MinecraftGameProvider.java:226)
+	at net.fabricmc.loader.launch.knot.Knot.init(Knot.java:139)
+	at net.fabricmc.loader.launch.knot.KnotClient.main(KnotClient.java:27)
+	at net.fabricmc.devlaunchinjector.Main.main(Main.java:86)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Render thread
+Stacktrace:
+	at org.lwjgl.system.Library.loadSystem(Library.java:147)
+	at org.lwjgl.system.Library.loadSystem(Library.java:67)
+	at org.lwjgl.system.Library.<clinit>(Library.java:50)
+	at org.lwjgl.system.MemoryUtil.<clinit>(MemoryUtil.java:97)
+	at org.lwjgl.system.Pointer$Default.<clinit>(Pointer.java:61)
+	at net.minecraft.client.util.Window.acceptError(Window.java:131)
+	at com.mojang.blaze3d.platform.GLX._initGlfw(GLX.java:73)
+	at com.mojang.blaze3d.systems.RenderSystem.initBackendSystem(RenderSystem.java:586)
+	at net.minecraft.client.MinecraftClient.<init>(MinecraftClient.java:432)
+
+-- Initialization --
+Details:
+Stacktrace:
+	at net.minecraft.client.main.Main.main(Main.java:149)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at net.fabricmc.loader.game.MinecraftGameProvider.launch(MinecraftGameProvider.java:226)
+	at net.fabricmc.loader.launch.knot.Knot.init(Knot.java:139)
+	at net.fabricmc.loader.launch.knot.KnotClient.main(KnotClient.java:27)
+	at net.fabricmc.devlaunchinjector.Main.main(Main.java:86)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.16.5
+	Minecraft Version ID: 1.16.5
+	Operating System: Mac OS X (x86_64) version 10.16
+	Java Version: 15.0.2, AdoptOpenJDK
+	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode, sharing), AdoptOpenJDK
+	Memory: 342109440 bytes (326 MB) / 826277888 bytes (788 MB) up to 2147483648 bytes (2048 MB)
+	CPUs: 8
+	JVM Flags: 4 total; -Xdebug -Xnoagent -Xrunjdwp:transport=dt_socket,address=localhost:63160,server=n,suspend=y -XX:+ShowCodeDetailsInExceptionMessages
+	Launched Version: Fabric
+	Backend library: LWJGL version 3.2.1 build 12
+	Backend API: ~~ERROR~~ NoClassDefFoundError: Could not initialize class org.lwjgl.system.Library
+	GL Caps: 
+	Using VBOs: Yes
+	Is Modded: Definitely; Client brand changed to 'fabric'
+	Type: Client (map_client.txt)
+	CPU: <unknown>
