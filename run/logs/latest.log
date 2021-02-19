@@ -1,56 +1,56 @@
-[11:28:58] [main/INFO] (FabricLoader) Loading for game Minecraft 1.16.5
-[11:28:58] [main/INFO] (Fabric|Loader) [FabricLoader] Loading 46 mods: fabric-networking-blockentity-v0@0.2.7+a03e98793a, fabric-renderer-api-v1@0.4.0+cbe9176f3a, minecraft@1.16.5, fabric-screen-handler-api-v1@1.1.0+6a2618f53a, fabric-keybindings-v0@0.2.0+6a2618f53a, fabric-command-api-v1@1.0.9+6a2618f53a, fabricloader@0.11.1, fabric-tool-attribute-api-v1@1.2.5+6a2618f53a, fabric-structure-api-v1@1.1.3+cbe9176f3a, fabric-renderer-indigo@0.4.3+6a2618f53a, fabric-containers-v0@0.1.9+a03e98793a, fabric-dimensions-v1@2.0.1+9a6c75813a, fabric-object-builder-api-v1@1.9.2+6a2618f53a, java@11, fabric-item-api-v1@1.2.0+6a2618f53a, fabric-crash-report-info-v1@0.1.2+b7f9825d3a, fabric-events-interaction-v0@0.4.1+6a2618f53a, enderthyst@${version}, fabric-game-rule-api-v1@1.0.5+cbe9176f3a, fabric-entity-events-v1@1.0.2+8004b36d3a, fabric-api-base@0.2.0+ab87788d3a, fabric-rendering-v0@1.1.1+6a2618f53a, fabric-rendering-v1@1.5.0+c26373133a, fabric-key-binding-api-v1@1.0.1+730711c63a, fabric-rendering-data-attachment-v1@0.1.4+6a2618f53a, fabric-resource-loader-v0@0.4.1+0d4d7e343a, fabric-textures-v0@1.0.5+6a2618f53a, fabric-content-registries-v0@0.2.0+e77439c73a, fabric-tag-extensions-v0@1.1.0+e77439c73a, fabric-biome-api-v1@3.1.0+2e23b97c3a, fabric-rendering-fluids-v1@0.1.12+6a2618f53a, fabric-commands-v0@0.2.1+cbe9176f3a, fabric-registry-sync-v0@0.7.3+be155ae23a, fabric-blockrenderlayer-v1@1.1.4+6a2618f53a, fabric-lifecycle-events-v1@1.2.0+ffb68a873a, fabric-mining-levels-v0@0.1.2+6a2618f53a, fabric-renderer-registries-v1@2.2.0+6a2618f53a, fabric-networking-api-v1@1.0.0+4358fbc63a, fabric-loot-tables-v1@1.0.1+6a2618f53a, fabric-events-lifecycle-v0@0.2.0+6a2618f53a, fabric@0.29.3+1.16, fabric-models-v0@0.2.0+cbe9176f3a, fabric-particles-v1@0.2.3+cbe9176f3a, fabric-item-groups-v0@0.2.2+cbe9176f3a, fabric-object-builders-v0@0.7.1+6a2618f53a, fabric-networking-v0@0.3.1+2a4333d33a
-[11:28:59] [main/WARN] (Fabric|Loader) Mod `enderthyst` (${version}) does not respect SemVer - comparison support is limited.
-[11:28:59] [main/INFO] (mixin) SpongePowered MIXIN Subsystem Version=0.8.2 Source=file:/C:/Users/AShwini/.gradle/caches/modules-2/files-2.1/net.fabricmc/sponge-mixin/0.8.2+build.24/e5a741445d0f425bf3cce946c6cf8c7fb8376b2/sponge-mixin-0.8.2+build.24.jar Service=Knot/Fabric Env=CLIENT
-[11:28:59] [main/INFO] (Fabric|MixinBootstrap) Loaded Fabric development mappings for mixin remapper!
-[11:29:00] [main/INFO] (mixin) Remapping refMap fabric-networking-blockentity-v0-refmap.json using remapper chain
-[11:29:00] [main/INFO] (mixin) Remapping refMap fabric-screen-handler-api-v1-refmap.json using remapper chain
-[11:29:00] [main/INFO] (mixin) Remapping refMap fabric-lifecycle-events-v1-refmap.json using remapper chain
-[11:29:00] [main/INFO] (mixin) Remapping refMap fabric-containers-v0-refmap.json using remapper chain
-[11:29:00] [main/INFO] (mixin) Remapping refMap fabric-renderer-indigo-refmap.json using remapper chain
-[11:29:00] [main/INFO] (mixin) Remapping refMap fabric-rendering-data-attachment-v1-refmap.json using remapper chain
-[11:29:00] [main/INFO] (mixin) Remapping refMap fabric-structure-api-v1-refmap.json using remapper chain
-[11:29:00] [main/INFO] (mixin) Remapping refMap fabric-item-api-v1-refmap.json using remapper chain
-[11:29:00] [main/INFO] (mixin) Remapping refMap fabric-events-interaction-v0-refmap.json using remapper chain
-[11:29:00] [main/INFO] (mixin) Remapping refMap fabric-loot-tables-v1-refmap.json using remapper chain
-[11:29:00] [main/INFO] (mixin) Remapping refMap fabric-object-builder-api-v1-refmap.json using remapper chain
-[11:29:00] [main/INFO] (mixin) Remapping refMap fabric-dimensions-v1-refmap.json using remapper chain
-[11:29:00] [main/INFO] (mixin) Remapping refMap fabric-renderer-registries-v1-refmap.json using remapper chain
-[11:29:00] [main/INFO] (mixin) Remapping refMap fabric-textures-v0-refmap.json using remapper chain
-[11:29:00] [main/INFO] (mixin) Remapping refMap fabric-registry-sync-v0-refmap.json using remapper chain
-[11:29:00] [main/INFO] (mixin) Remapping refMap fabric-models-v0-refmap.json using remapper chain
-[11:29:00] [main/INFO] (mixin) Remapping refMap fabric-blockrenderlayer-v1-refmap.json using remapper chain
-[11:29:00] [main/INFO] (mixin) Remapping refMap fabric-renderer-api-v1-refmap.json using remapper chain
-[11:29:00] [main/INFO] (mixin) Remapping refMap fabric-containers-v0-refmap.json using remapper chain
-[11:29:00] [main/INFO] (mixin) Remapping refMap fabric-rendering-fluids-v1-refmap.json using remapper chain
-[11:29:00] [main/INFO] (mixin) Remapping refMap fabric-biome-api-v1-refmap.json using remapper chain
-[11:29:00] [main/INFO] (mixin) Remapping refMap fabric-resource-loader-v0-refmap.json using remapper chain
-[11:29:00] [main/INFO] (mixin) Remapping refMap fabric-game-rule-api-v1-refmap.json using remapper chain
-[11:29:00] [main/INFO] (mixin) Remapping refMap fabric-networking-api-v1-refmap.json using remapper chain
-[11:29:00] [main/INFO] (mixin) Remapping refMap fabric-particles-v1-refmap.json using remapper chain
-[11:29:00] [main/INFO] (mixin) Remapping refMap fabric-object-builders-refmap.json using remapper chain
-[11:29:00] [main/INFO] (mixin) Remapping refMap fabric-tag-extensions-v0-refmap.json using remapper chain
-[11:29:00] [main/INFO] (mixin) Remapping refMap fabric-tool-attribute-api-v1-refmap.json using remapper chain
-[11:29:00] [main/INFO] (mixin) Remapping refMap fabric-rendering-v1-refmap.json using remapper chain
-[11:29:00] [main/INFO] (mixin) Remapping refMap fabric-item-groups-v0-refmap.json using remapper chain
-[11:29:00] [main/INFO] (mixin) Remapping refMap fabric-content-registries-v0-refmap.json using remapper chain
-[11:29:00] [main/INFO] (mixin) Remapping refMap fabric-command-api-v1-refmap.json using remapper chain
-[11:29:00] [main/INFO] (mixin) Remapping refMap fabric-crash-report-info-v1-refmap.json using remapper chain
-[11:29:00] [main/INFO] (mixin) Remapping refMap fabric-entity-events-v1-refmap.json using remapper chain
-[11:29:00] [main/INFO] (mixin) Remapping refMap fabric-key-binding-api-v1-refmap.json using remapper chain
-[11:29:00] [main/INFO] (mixin) Remapping refMap fabric-renderer-api-v1-refmap.json using remapper chain
-[11:29:00] [main/WARN] (mixin) @Mixin target net/minecraft/client/render/block/BlockModelRenderer$AmbientOcclusionCalculator is public in fabric-renderer-indigo.mixins.json:MixinAmbientOcclusionCalculator and should be specified in value
-[11:29:00] [main/WARN] (mixin) @Mixin target net/minecraft/client/render/chunk/ChunkBuilder$BuiltChunk$RebuildTask is public in fabric-renderer-indigo.mixins.json:MixinChunkRebuildTask and should be specified in value
-[11:29:00] [main/WARN] (mixin) @Mixin target net/minecraft/village/TradeOffers$TypeAwareBuyForOneEmeraldFactory is public in fabric-object-builder-v1.mixins.json:TypeAwareTradeMixin and should be specified in value
-[11:29:00] [main/WARN] (mixin) @Mixin target net/minecraft/client/font/FontManager$1 is public in fabric-resource-loader-v0.mixins.json:client.FontManagerResourceReloadListenerMixin and should be specified in value
-[11:29:00] [main/WARN] (mixin) @Mixin target net/minecraft/server/command/GameRuleCommand$1 is public in fabric-game-rule-api-v1.mixins.json:GameRuleCommandVisitorMixin and should be specified in value
-[11:29:00] [main/WARN] (mixin) @Mixin target net/minecraft/client/gui/screen/world/EditGameRulesScreen$RuleListWidget$1 is public in fabric-game-rule-api-v1.mixins.json:client.RuleListWidgetVisitorMixin and should be specified in value
-[11:29:00] [main/WARN] (mixin) @Mixin target net/minecraft/server/world/ThreadedAnvilChunkStorage$EntityTracker is public in fabric-networking-api-v1.mixins.json:accessor.EntityTrackerAccessor and should be specified in value
-[11:29:00] [main/WARN] (mixin) @Mixin target net/minecraft/client/particle/ParticleManager$SimpleSpriteProvider is public in fabric-particles-v1.mixins.json:ParticleManagerAccessor$SimpleSpriteProviderAccessor and should be specified in value
-[11:29:00] [main/WARN] (mixin) @Mixin target net/minecraft/tag/Tag$1 is public in fabric-tag-extensions-v0.mixins.json:MixinTagImpl and should be specified in value
-[11:29:00] [main/WARN] (mixin) @Mixin target net/minecraft/tag/RequiredTagList$TagWrapper is public in fabric-tag-extensions-v0.mixins.json:MixinTagImpl and should be specified in value
-[11:29:07] [main/INFO] (Minecraft) Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
-[11:29:08] [main/ERROR] (Minecraft) Failed to verify authentication
+[17:53:31] [main/INFO] (FabricLoader) Loading for game Minecraft 1.16.5
+[17:53:32] [main/INFO] (Fabric|Loader) [FabricLoader] Loading 46 mods: fabric-networking-blockentity-v0@0.2.7+a03e98793a, fabric-renderer-api-v1@0.4.0+cbe9176f3a, minecraft@1.16.5, fabric-screen-handler-api-v1@1.1.0+6a2618f53a, fabric-keybindings-v0@0.2.0+6a2618f53a, fabric-command-api-v1@1.0.9+6a2618f53a, fabricloader@0.11.1, fabric-tool-attribute-api-v1@1.2.5+6a2618f53a, fabric-structure-api-v1@1.1.3+cbe9176f3a, fabric-renderer-indigo@0.4.3+6a2618f53a, fabric-containers-v0@0.1.9+a03e98793a, fabric-dimensions-v1@2.0.1+9a6c75813a, fabric-object-builder-api-v1@1.9.2+6a2618f53a, java@11, fabric-item-api-v1@1.2.0+6a2618f53a, fabric-crash-report-info-v1@0.1.2+b7f9825d3a, fabric-events-interaction-v0@0.4.1+6a2618f53a, enderthyst@${version}, fabric-game-rule-api-v1@1.0.5+cbe9176f3a, fabric-entity-events-v1@1.0.2+8004b36d3a, fabric-api-base@0.2.0+ab87788d3a, fabric-rendering-v0@1.1.1+6a2618f53a, fabric-rendering-v1@1.5.0+c26373133a, fabric-key-binding-api-v1@1.0.1+730711c63a, fabric-rendering-data-attachment-v1@0.1.4+6a2618f53a, fabric-resource-loader-v0@0.4.1+0d4d7e343a, fabric-textures-v0@1.0.5+6a2618f53a, fabric-content-registries-v0@0.2.0+e77439c73a, fabric-tag-extensions-v0@1.1.0+e77439c73a, fabric-biome-api-v1@3.1.0+2e23b97c3a, fabric-rendering-fluids-v1@0.1.12+6a2618f53a, fabric-commands-v0@0.2.1+cbe9176f3a, fabric-registry-sync-v0@0.7.3+be155ae23a, fabric-blockrenderlayer-v1@1.1.4+6a2618f53a, fabric-lifecycle-events-v1@1.2.0+ffb68a873a, fabric-mining-levels-v0@0.1.2+6a2618f53a, fabric-renderer-registries-v1@2.2.0+6a2618f53a, fabric-networking-api-v1@1.0.0+4358fbc63a, fabric-loot-tables-v1@1.0.1+6a2618f53a, fabric-events-lifecycle-v0@0.2.0+6a2618f53a, fabric@0.29.3+1.16, fabric-models-v0@0.2.0+cbe9176f3a, fabric-particles-v1@0.2.3+cbe9176f3a, fabric-item-groups-v0@0.2.2+cbe9176f3a, fabric-networking-v0@0.3.1+2a4333d33a, fabric-object-builders-v0@0.7.1+6a2618f53a
+[17:53:32] [main/WARN] (Fabric|Loader) Mod `enderthyst` (${version}) does not respect SemVer - comparison support is limited.
+[17:53:32] [main/INFO] (mixin) SpongePowered MIXIN Subsystem Version=0.8.2 Source=file:/C:/Users/AShwini/.gradle/caches/modules-2/files-2.1/net.fabricmc/sponge-mixin/0.8.2+build.24/e5a741445d0f425bf3cce946c6cf8c7fb8376b2/sponge-mixin-0.8.2+build.24.jar Service=Knot/Fabric Env=CLIENT
+[17:53:32] [main/INFO] (Fabric|MixinBootstrap) Loaded Fabric development mappings for mixin remapper!
+[17:53:33] [main/INFO] (mixin) Remapping refMap fabric-networking-blockentity-v0-refmap.json using remapper chain
+[17:53:33] [main/INFO] (mixin) Remapping refMap fabric-screen-handler-api-v1-refmap.json using remapper chain
+[17:53:33] [main/INFO] (mixin) Remapping refMap fabric-lifecycle-events-v1-refmap.json using remapper chain
+[17:53:33] [main/INFO] (mixin) Remapping refMap fabric-containers-v0-refmap.json using remapper chain
+[17:53:33] [main/INFO] (mixin) Remapping refMap fabric-renderer-indigo-refmap.json using remapper chain
+[17:53:33] [main/INFO] (mixin) Remapping refMap fabric-rendering-data-attachment-v1-refmap.json using remapper chain
+[17:53:33] [main/INFO] (mixin) Remapping refMap fabric-structure-api-v1-refmap.json using remapper chain
+[17:53:33] [main/INFO] (mixin) Remapping refMap fabric-item-api-v1-refmap.json using remapper chain
+[17:53:33] [main/INFO] (mixin) Remapping refMap fabric-events-interaction-v0-refmap.json using remapper chain
+[17:53:33] [main/INFO] (mixin) Remapping refMap fabric-loot-tables-v1-refmap.json using remapper chain
+[17:53:33] [main/INFO] (mixin) Remapping refMap fabric-object-builder-api-v1-refmap.json using remapper chain
+[17:53:33] [main/INFO] (mixin) Remapping refMap fabric-dimensions-v1-refmap.json using remapper chain
+[17:53:33] [main/INFO] (mixin) Remapping refMap fabric-renderer-registries-v1-refmap.json using remapper chain
+[17:53:33] [main/INFO] (mixin) Remapping refMap fabric-textures-v0-refmap.json using remapper chain
+[17:53:33] [main/INFO] (mixin) Remapping refMap fabric-registry-sync-v0-refmap.json using remapper chain
+[17:53:33] [main/INFO] (mixin) Remapping refMap fabric-models-v0-refmap.json using remapper chain
+[17:53:33] [main/INFO] (mixin) Remapping refMap fabric-blockrenderlayer-v1-refmap.json using remapper chain
+[17:53:33] [main/INFO] (mixin) Remapping refMap fabric-renderer-api-v1-refmap.json using remapper chain
+[17:53:33] [main/INFO] (mixin) Remapping refMap fabric-containers-v0-refmap.json using remapper chain
+[17:53:33] [main/INFO] (mixin) Remapping refMap fabric-rendering-fluids-v1-refmap.json using remapper chain
+[17:53:33] [main/INFO] (mixin) Remapping refMap fabric-biome-api-v1-refmap.json using remapper chain
+[17:53:33] [main/INFO] (mixin) Remapping refMap fabric-resource-loader-v0-refmap.json using remapper chain
+[17:53:33] [main/INFO] (mixin) Remapping refMap fabric-game-rule-api-v1-refmap.json using remapper chain
+[17:53:33] [main/INFO] (mixin) Remapping refMap fabric-networking-api-v1-refmap.json using remapper chain
+[17:53:33] [main/INFO] (mixin) Remapping refMap fabric-particles-v1-refmap.json using remapper chain
+[17:53:33] [main/INFO] (mixin) Remapping refMap fabric-object-builders-refmap.json using remapper chain
+[17:53:33] [main/INFO] (mixin) Remapping refMap fabric-tag-extensions-v0-refmap.json using remapper chain
+[17:53:33] [main/INFO] (mixin) Remapping refMap fabric-tool-attribute-api-v1-refmap.json using remapper chain
+[17:53:33] [main/INFO] (mixin) Remapping refMap fabric-rendering-v1-refmap.json using remapper chain
+[17:53:33] [main/INFO] (mixin) Remapping refMap fabric-item-groups-v0-refmap.json using remapper chain
+[17:53:33] [main/INFO] (mixin) Remapping refMap fabric-content-registries-v0-refmap.json using remapper chain
+[17:53:33] [main/INFO] (mixin) Remapping refMap fabric-command-api-v1-refmap.json using remapper chain
+[17:53:33] [main/INFO] (mixin) Remapping refMap fabric-crash-report-info-v1-refmap.json using remapper chain
+[17:53:33] [main/INFO] (mixin) Remapping refMap fabric-entity-events-v1-refmap.json using remapper chain
+[17:53:33] [main/INFO] (mixin) Remapping refMap fabric-key-binding-api-v1-refmap.json using remapper chain
+[17:53:33] [main/INFO] (mixin) Remapping refMap fabric-renderer-api-v1-refmap.json using remapper chain
+[17:53:33] [main/WARN] (mixin) @Mixin target net/minecraft/client/render/block/BlockModelRenderer$AmbientOcclusionCalculator is public in fabric-renderer-indigo.mixins.json:MixinAmbientOcclusionCalculator and should be specified in value
+[17:53:33] [main/WARN] (mixin) @Mixin target net/minecraft/client/render/chunk/ChunkBuilder$BuiltChunk$RebuildTask is public in fabric-renderer-indigo.mixins.json:MixinChunkRebuildTask and should be specified in value
+[17:53:33] [main/WARN] (mixin) @Mixin target net/minecraft/village/TradeOffers$TypeAwareBuyForOneEmeraldFactory is public in fabric-object-builder-v1.mixins.json:TypeAwareTradeMixin and should be specified in value
+[17:53:33] [main/WARN] (mixin) @Mixin target net/minecraft/client/font/FontManager$1 is public in fabric-resource-loader-v0.mixins.json:client.FontManagerResourceReloadListenerMixin and should be specified in value
+[17:53:33] [main/WARN] (mixin) @Mixin target net/minecraft/server/command/GameRuleCommand$1 is public in fabric-game-rule-api-v1.mixins.json:GameRuleCommandVisitorMixin and should be specified in value
+[17:53:33] [main/WARN] (mixin) @Mixin target net/minecraft/client/gui/screen/world/EditGameRulesScreen$RuleListWidget$1 is public in fabric-game-rule-api-v1.mixins.json:client.RuleListWidgetVisitorMixin and should be specified in value
+[17:53:33] [main/WARN] (mixin) @Mixin target net/minecraft/server/world/ThreadedAnvilChunkStorage$EntityTracker is public in fabric-networking-api-v1.mixins.json:accessor.EntityTrackerAccessor and should be specified in value
+[17:53:33] [main/WARN] (mixin) @Mixin target net/minecraft/client/particle/ParticleManager$SimpleSpriteProvider is public in fabric-particles-v1.mixins.json:ParticleManagerAccessor$SimpleSpriteProviderAccessor and should be specified in value
+[17:53:33] [main/WARN] (mixin) @Mixin target net/minecraft/tag/Tag$1 is public in fabric-tag-extensions-v0.mixins.json:MixinTagImpl and should be specified in value
+[17:53:33] [main/WARN] (mixin) @Mixin target net/minecraft/tag/RequiredTagList$TagWrapper is public in fabric-tag-extensions-v0.mixins.json:MixinTagImpl and should be specified in value
+[17:53:39] [main/INFO] (Minecraft) Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[17:53:40] [main/ERROR] (Minecraft) Failed to verify authentication
 com.mojang.authlib.exceptions.AuthenticationUnavailableException: null
 	at com.mojang.authlib.yggdrasil.YggdrasilSocialInteractionsService.checkPrivileges(YggdrasilSocialInteractionsService.java:97) ~[authlib-2.1.28.jar:?]
 	at com.mojang.authlib.yggdrasil.YggdrasilSocialInteractionsService.<init>(YggdrasilSocialInteractionsService.java:40) ~[authlib-2.1.28.jar:?]
@@ -66,98 +66,100 @@ com.mojang.authlib.exceptions.AuthenticationUnavailableException: null
 	at net.fabricmc.loader.launch.knot.Knot.init(Knot.java:139) [fabric-loader-0.11.1@net.fabricmc.yarn.1_16_5.1.16.5+build.4-v2.jar:?]
 	at net.fabricmc.loader.launch.knot.KnotClient.main(KnotClient.java:27) [fabric-loader-0.11.1@net.fabricmc.yarn.1_16_5.1.16.5+build.4-v2.jar:?]
 	at net.fabricmc.devlaunchinjector.Main.main(Main.java:86) [dev-launch-injector-0.2.1+build.8.jar:?]
-[11:29:08] [main/INFO] (Minecraft) Setting user: Player662
-[11:29:09] [main/INFO] (Indigo) [Indigo] Registering Indigo renderer!
-[11:29:10] [main/INFO] (Minecraft) Backend library: LWJGL version 3.2.2 build 10
-[11:29:14] [main/INFO] (Minecraft) Narrator library for x64 successfully loaded
-[11:29:14] [main/INFO] (Minecraft) [STDOUT]: This line is printed by an example mod mixin!
-[11:29:15] [main/INFO] (Minecraft) Reloading ResourceManager: Default, Fabric Mods (Fabric Networking Block Entity (v0), Fabric Renderer API (v1), Fabric Screen Handler API (v1), Fabric Key Bindings (v0), Fabric Command API (v1), Fabric Loader, Fabric Tool Attribute API (v1), Fabric Structure API (v1), Fabric Renderer - Indigo, Fabric Containers (v0), Fabric Object Builder API (v1), Fabric Item API (v1), Fabric Crash Report Info (v1), Fabric Events Interaction (v0), The Ender Mod, Fabric Game Rule API (v1), Fabric Entity Events (v1), Fabric API Base, Fabric Rendering (v0), Fabric Rendering (v1), Fabric Key Binding API (v1), Fabric Rendering Data Attachment (v1), Fabric Resource Loader (v0), Fabric Textures (v0), Fabric Content Registries (v0), Fabric Tag Extensions (v0), Fabric Biome API (v1), Fabric Rendering Fluids (v1), Fabric Commands (v0), Fabric Registry Sync (v0), Fabric BlockRenderLayer Registration (v1), Fabric Lifecycle Events (v1), Fabric Mining Levels (v0), Fabric Renderer Registries (v1), Fabric Networking API (v1), Fabric Loot Tables (v1), Fabric Events Lifecycle (v0), Fabric API, Fabric Models (v0), Fabric Particles (v1), Fabric Item Groups (v0), Fabric Object Builders (v0), Fabric Networking (v0))
-[11:29:16] [Realms Notification Availability checker #1/INFO] (Minecraft) Could not authorize you against Realms server: Invalid session id
-[11:29:25] [Worker-Main-13/WARN] (Minecraft) Exception loading blockstate definition: enderthyst:blockstates/acid.json: java.io.FileNotFoundException: enderthyst:blockstates/acid.json
-[11:29:25] [Worker-Main-13/WARN] (Minecraft) Exception loading blockstate definition: 'enderthyst:blockstates/acid.json' missing model for variant: 'enderthyst:acid#level=9'
-[11:29:25] [Worker-Main-13/WARN] (Minecraft) Exception loading blockstate definition: 'enderthyst:blockstates/acid.json' missing model for variant: 'enderthyst:acid#level=10'
-[11:29:25] [Worker-Main-13/WARN] (Minecraft) Exception loading blockstate definition: 'enderthyst:blockstates/acid.json' missing model for variant: 'enderthyst:acid#level=8'
-[11:29:25] [Worker-Main-13/WARN] (Minecraft) Exception loading blockstate definition: 'enderthyst:blockstates/acid.json' missing model for variant: 'enderthyst:acid#level=12'
-[11:29:25] [Worker-Main-13/WARN] (Minecraft) Exception loading blockstate definition: 'enderthyst:blockstates/acid.json' missing model for variant: 'enderthyst:acid#level=11'
-[11:29:25] [Worker-Main-13/WARN] (Minecraft) Exception loading blockstate definition: 'enderthyst:blockstates/acid.json' missing model for variant: 'enderthyst:acid#level=14'
-[11:29:25] [Worker-Main-13/WARN] (Minecraft) Exception loading blockstate definition: 'enderthyst:blockstates/acid.json' missing model for variant: 'enderthyst:acid#level=13'
-[11:29:25] [Worker-Main-13/WARN] (Minecraft) Exception loading blockstate definition: 'enderthyst:blockstates/acid.json' missing model for variant: 'enderthyst:acid#level=15'
-[11:29:25] [Worker-Main-13/WARN] (Minecraft) Exception loading blockstate definition: 'enderthyst:blockstates/acid.json' missing model for variant: 'enderthyst:acid#level=1'
-[11:29:25] [Worker-Main-13/WARN] (Minecraft) Exception loading blockstate definition: 'enderthyst:blockstates/acid.json' missing model for variant: 'enderthyst:acid#level=0'
-[11:29:25] [Worker-Main-13/WARN] (Minecraft) Exception loading blockstate definition: 'enderthyst:blockstates/acid.json' missing model for variant: 'enderthyst:acid#level=3'
-[11:29:25] [Worker-Main-13/WARN] (Minecraft) Exception loading blockstate definition: 'enderthyst:blockstates/acid.json' missing model for variant: 'enderthyst:acid#level=2'
-[11:29:25] [Worker-Main-13/WARN] (Minecraft) Exception loading blockstate definition: 'enderthyst:blockstates/acid.json' missing model for variant: 'enderthyst:acid#level=5'
-[11:29:25] [Worker-Main-13/WARN] (Minecraft) Exception loading blockstate definition: 'enderthyst:blockstates/acid.json' missing model for variant: 'enderthyst:acid#level=4'
-[11:29:25] [Worker-Main-13/WARN] (Minecraft) Exception loading blockstate definition: 'enderthyst:blockstates/acid.json' missing model for variant: 'enderthyst:acid#level=7'
-[11:29:25] [Worker-Main-13/WARN] (Minecraft) Exception loading blockstate definition: 'enderthyst:blockstates/acid.json' missing model for variant: 'enderthyst:acid#level=6'
-[11:29:25] [Worker-Main-13/WARN] (Minecraft) Exception loading blockstate definition: enderthyst:blockstates/enderthyst_ore.json: java.io.FileNotFoundException: enderthyst:blockstates/enderthyst_ore.json
-[11:29:25] [Worker-Main-13/WARN] (Minecraft) Exception loading blockstate definition: 'enderthyst:blockstates/enderthyst_ore.json' missing model for variant: 'enderthyst:enderthyst_ore#'
-[11:29:28] [Worker-Main-13/WARN] (Minecraft) Unable to load model: 'enderthyst:enderthyst_ore#inventory' referenced from: enderthyst:enderthyst_ore#inventory: java.io.FileNotFoundException: enderthyst:models/item/enderthyst_ore.json
-[11:29:31] [main/INFO] (Minecraft) OpenAL initialized.
-[11:29:31] [main/INFO] (Minecraft) Sound engine started
-[11:29:32] [main/INFO] (Minecraft) Created: 1024x1024x4 minecraft:textures/atlas/blocks.png-atlas
-[11:29:32] [main/INFO] (Minecraft) Created: 256x128x4 minecraft:textures/atlas/signs.png-atlas
-[11:29:32] [main/INFO] (Minecraft) Created: 1024x512x4 minecraft:textures/atlas/banner_patterns.png-atlas
-[11:29:32] [main/INFO] (Minecraft) Created: 1024x512x4 minecraft:textures/atlas/shield_patterns.png-atlas
-[11:29:32] [main/INFO] (Minecraft) Created: 256x256x4 minecraft:textures/atlas/chest.png-atlas
-[11:29:32] [main/INFO] (Minecraft) Created: 512x256x4 minecraft:textures/atlas/beds.png-atlas
-[11:29:32] [main/INFO] (Minecraft) Created: 512x256x4 minecraft:textures/atlas/shulker_boxes.png-atlas
-[11:29:32] [main/INFO] (Minecraft) Created: 256x256x0 minecraft:textures/atlas/particles.png-atlas
-[11:29:32] [main/INFO] (Minecraft) Created: 256x256x0 minecraft:textures/atlas/paintings.png-atlas
-[11:29:32] [main/INFO] (Minecraft) Created: 256x128x0 minecraft:textures/atlas/mob_effects.png-atlas
-[11:29:32] [main/INFO] (Minecraft) [STDOUT]: This line is printed by an example mod mixin!
-[11:31:22] [main/WARN] (Minecraft) Ambiguity between arguments [teleport, destination] and [teleport, targets] with inputs: [Player, 0123, @e, dd12be42-52a9-4a91-a8a1-11c01849e498]
-[11:31:22] [main/WARN] (Minecraft) Ambiguity between arguments [teleport, location] and [teleport, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
-[11:31:22] [main/WARN] (Minecraft) Ambiguity between arguments [teleport, location] and [teleport, targets] with inputs: [0.1 -0.5 .9, 0 0 0]
-[11:31:22] [main/WARN] (Minecraft) Ambiguity between arguments [teleport, targets] and [teleport, destination] with inputs: [Player, 0123, dd12be42-52a9-4a91-a8a1-11c01849e498]
-[11:31:22] [main/WARN] (Minecraft) Ambiguity between arguments [teleport, targets, location] and [teleport, targets, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
-[11:31:22] [main/INFO] (Minecraft) Reloading ResourceManager: Default, Fabric Mods (Fabric Tool Attribute API (v1), The Ender Mod)
-[11:31:24] [main/INFO] (Minecraft) Loaded 7 recipes
-[11:31:24] [main/INFO] (Minecraft) Loaded 927 advancements
-[11:31:24] [main/INFO] (BiomeModificationImpl) Applied 5 biome modifications to 5 of 79 new biomes in 9.394 ms
-[11:31:25] [main/INFO] (Minecraft) Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
-[11:31:25] [Server thread/INFO] (Minecraft) Starting integrated minecraft server version 1.16.5
-[11:31:25] [Server thread/INFO] (Minecraft) Generating keypair
-[11:31:25] [Server thread/INFO] (Minecraft) Preparing start region for dimension minecraft:overworld
-[11:31:26] [main/INFO] (Minecraft) Preparing spawn area: 0%
-[11:31:26] [main/INFO] (Minecraft) Preparing spawn area: 0%
-[11:31:27] [main/INFO] (Minecraft) Preparing spawn area: 17%
-[11:31:28] [main/INFO] (Minecraft) Preparing spawn area: 83%
-[11:31:28] [main/INFO] (Minecraft) Preparing spawn area: 83%
-[11:31:28] [main/INFO] (Minecraft) Preparing spawn area: 83%
-[11:31:29] [main/INFO] (Minecraft) Preparing spawn area: 84%
-[11:31:29] [main/INFO] (Minecraft) Preparing spawn area: 95%
-[11:31:30] [main/INFO] (Minecraft) Preparing spawn area: 96%
-[11:31:30] [main/INFO] (Minecraft) Preparing spawn area: 97%
-[11:31:30] [main/INFO] (Minecraft) Time elapsed: 4812 ms
-[11:31:31] [Server thread/INFO] (Minecraft) Changing view distance to 11, from 10
-[11:31:32] [Server thread/INFO] (Minecraft) Player662[local:E:88872000] logged in with entity id 162 at (-113.53742663776598, 63.0, -220.4653836480975)
-[11:31:32] [Server thread/INFO] (Minecraft) Player662 joined the game
-[11:31:32] [Server thread/INFO] (Minecraft) Player662 has made the advancement [Diamonds!]
-[11:31:33] [Server thread/INFO] (Minecraft) Saving and pausing game...
-[11:31:33] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[u8537457375]'/minecraft:overworld
-[11:31:33] [main/INFO] (Minecraft) [CHAT] Player662 has made the advancement [Diamonds!]
-[11:31:33] [main/INFO] (Minecraft) Loaded 22 advancements
-[11:31:34] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[u8537457375]'/minecraft:the_nether
-[11:31:34] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[u8537457375]'/minecraft:the_end
-[11:31:49] [Server thread/INFO] (Minecraft) Saving and pausing game...
-[11:31:49] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[u8537457375]'/minecraft:overworld
-[11:31:49] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[u8537457375]'/minecraft:the_nether
-[11:31:49] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[u8537457375]'/minecraft:the_end
-[11:31:49] [Server thread/INFO] (Minecraft) Player662 lost connection: Disconnected
-[11:31:49] [Server thread/INFO] (Minecraft) Player662 left the game
-[11:31:49] [Server thread/INFO] (Minecraft) Stopping singleplayer server as player logged out
-[11:31:50] [Server thread/INFO] (Minecraft) Stopping server
-[11:31:50] [Server thread/INFO] (Minecraft) Saving players
-[11:31:50] [Server thread/INFO] (Minecraft) Saving worlds
-[11:31:50] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[u8537457375]'/minecraft:overworld
-[11:31:50] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (u8537457375): All chunks are saved
-[11:31:50] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[u8537457375]'/minecraft:the_nether
-[11:31:50] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
-[11:31:50] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[u8537457375]'/minecraft:the_end
-[11:31:50] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (DIM1): All chunks are saved
-[11:31:50] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (u8537457375): All chunks are saved
-[11:31:50] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
-[11:31:50] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (DIM1): All chunks are saved
-[11:31:50] [main/INFO] (Minecraft) [STDOUT]: This line is printed by an example mod mixin!
-[11:31:53] [main/INFO] (Minecraft) Stopping!
+[17:53:40] [main/INFO] (Minecraft) Setting user: Player838
+[17:53:41] [main/INFO] (Indigo) [Indigo] Registering Indigo renderer!
+[17:53:42] [main/INFO] (Minecraft) Backend library: LWJGL version 3.2.2 build 10
+[17:53:46] [main/INFO] (Minecraft) Narrator library for x64 successfully loaded
+[17:53:47] [main/INFO] (Minecraft) [STDOUT]: This line is printed by an example mod mixin!
+[17:53:47] [main/INFO] (Minecraft) Reloading ResourceManager: Default, Fabric Mods (Fabric Networking Block Entity (v0), Fabric Renderer API (v1), Fabric Screen Handler API (v1), Fabric Key Bindings (v0), Fabric Command API (v1), Fabric Loader, Fabric Tool Attribute API (v1), Fabric Structure API (v1), Fabric Renderer - Indigo, Fabric Containers (v0), Fabric Object Builder API (v1), Fabric Item API (v1), Fabric Crash Report Info (v1), Fabric Events Interaction (v0), The Ender Mod, Fabric Game Rule API (v1), Fabric Entity Events (v1), Fabric API Base, Fabric Rendering (v0), Fabric Rendering (v1), Fabric Key Binding API (v1), Fabric Rendering Data Attachment (v1), Fabric Resource Loader (v0), Fabric Textures (v0), Fabric Content Registries (v0), Fabric Tag Extensions (v0), Fabric Biome API (v1), Fabric Rendering Fluids (v1), Fabric Commands (v0), Fabric Registry Sync (v0), Fabric BlockRenderLayer Registration (v1), Fabric Lifecycle Events (v1), Fabric Mining Levels (v0), Fabric Renderer Registries (v1), Fabric Networking API (v1), Fabric Loot Tables (v1), Fabric Events Lifecycle (v0), Fabric API, Fabric Models (v0), Fabric Particles (v1), Fabric Item Groups (v0), Fabric Networking (v0), Fabric Object Builders (v0))
+[17:53:47] [Realms Notification Availability checker #1/INFO] (Minecraft) Could not authorize you against Realms server: Invalid session id
+[17:53:59] [Worker-Main-13/WARN] (Minecraft) Exception loading blockstate definition: enderthyst:blockstates/acid.json: java.io.FileNotFoundException: enderthyst:blockstates/acid.json
+[17:53:59] [Worker-Main-13/WARN] (Minecraft) Exception loading blockstate definition: 'enderthyst:blockstates/acid.json' missing model for variant: 'enderthyst:acid#level=9'
+[17:53:59] [Worker-Main-13/WARN] (Minecraft) Exception loading blockstate definition: 'enderthyst:blockstates/acid.json' missing model for variant: 'enderthyst:acid#level=10'
+[17:53:59] [Worker-Main-13/WARN] (Minecraft) Exception loading blockstate definition: 'enderthyst:blockstates/acid.json' missing model for variant: 'enderthyst:acid#level=8'
+[17:53:59] [Worker-Main-13/WARN] (Minecraft) Exception loading blockstate definition: 'enderthyst:blockstates/acid.json' missing model for variant: 'enderthyst:acid#level=12'
+[17:53:59] [Worker-Main-13/WARN] (Minecraft) Exception loading blockstate definition: 'enderthyst:blockstates/acid.json' missing model for variant: 'enderthyst:acid#level=11'
+[17:53:59] [Worker-Main-13/WARN] (Minecraft) Exception loading blockstate definition: 'enderthyst:blockstates/acid.json' missing model for variant: 'enderthyst:acid#level=14'
+[17:53:59] [Worker-Main-13/WARN] (Minecraft) Exception loading blockstate definition: 'enderthyst:blockstates/acid.json' missing model for variant: 'enderthyst:acid#level=13'
+[17:53:59] [Worker-Main-13/WARN] (Minecraft) Exception loading blockstate definition: 'enderthyst:blockstates/acid.json' missing model for variant: 'enderthyst:acid#level=15'
+[17:53:59] [Worker-Main-13/WARN] (Minecraft) Exception loading blockstate definition: 'enderthyst:blockstates/acid.json' missing model for variant: 'enderthyst:acid#level=1'
+[17:53:59] [Worker-Main-13/WARN] (Minecraft) Exception loading blockstate definition: 'enderthyst:blockstates/acid.json' missing model for variant: 'enderthyst:acid#level=0'
+[17:53:59] [Worker-Main-13/WARN] (Minecraft) Exception loading blockstate definition: 'enderthyst:blockstates/acid.json' missing model for variant: 'enderthyst:acid#level=3'
+[17:53:59] [Worker-Main-13/WARN] (Minecraft) Exception loading blockstate definition: 'enderthyst:blockstates/acid.json' missing model for variant: 'enderthyst:acid#level=2'
+[17:53:59] [Worker-Main-13/WARN] (Minecraft) Exception loading blockstate definition: 'enderthyst:blockstates/acid.json' missing model for variant: 'enderthyst:acid#level=5'
+[17:53:59] [Worker-Main-13/WARN] (Minecraft) Exception loading blockstate definition: 'enderthyst:blockstates/acid.json' missing model for variant: 'enderthyst:acid#level=4'
+[17:53:59] [Worker-Main-13/WARN] (Minecraft) Exception loading blockstate definition: 'enderthyst:blockstates/acid.json' missing model for variant: 'enderthyst:acid#level=7'
+[17:53:59] [Worker-Main-13/WARN] (Minecraft) Exception loading blockstate definition: 'enderthyst:blockstates/acid.json' missing model for variant: 'enderthyst:acid#level=6'
+[17:54:06] [main/INFO] (Minecraft) OpenAL initialized.
+[17:54:06] [main/INFO] (Minecraft) Sound engine started
+[17:54:07] [main/INFO] (Minecraft) Created: 1024x1024x4 minecraft:textures/atlas/blocks.png-atlas
+[17:54:07] [main/INFO] (Minecraft) Created: 256x128x4 minecraft:textures/atlas/signs.png-atlas
+[17:54:07] [main/INFO] (Minecraft) Created: 1024x512x4 minecraft:textures/atlas/banner_patterns.png-atlas
+[17:54:07] [main/INFO] (Minecraft) Created: 1024x512x4 minecraft:textures/atlas/shield_patterns.png-atlas
+[17:54:07] [main/INFO] (Minecraft) Created: 256x256x4 minecraft:textures/atlas/chest.png-atlas
+[17:54:07] [main/INFO] (Minecraft) Created: 512x256x4 minecraft:textures/atlas/beds.png-atlas
+[17:54:07] [main/INFO] (Minecraft) Created: 512x256x4 minecraft:textures/atlas/shulker_boxes.png-atlas
+[17:54:08] [main/INFO] (Minecraft) Created: 256x256x0 minecraft:textures/atlas/particles.png-atlas
+[17:54:08] [main/INFO] (Minecraft) Created: 256x256x0 minecraft:textures/atlas/paintings.png-atlas
+[17:54:08] [main/INFO] (Minecraft) Created: 256x128x0 minecraft:textures/atlas/mob_effects.png-atlas
+[17:54:08] [main/INFO] (Minecraft) [STDOUT]: This line is printed by an example mod mixin!
+[17:54:12] [main/INFO] (Minecraft) [STDOUT]: This line is printed by an example mod mixin!
+[17:54:15] [main/WARN] (Minecraft) Ambiguity between arguments [teleport, destination] and [teleport, targets] with inputs: [Player, 0123, @e, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[17:54:15] [main/WARN] (Minecraft) Ambiguity between arguments [teleport, location] and [teleport, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[17:54:15] [main/WARN] (Minecraft) Ambiguity between arguments [teleport, location] and [teleport, targets] with inputs: [0.1 -0.5 .9, 0 0 0]
+[17:54:15] [main/WARN] (Minecraft) Ambiguity between arguments [teleport, targets] and [teleport, destination] with inputs: [Player, 0123, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[17:54:15] [main/WARN] (Minecraft) Ambiguity between arguments [teleport, targets, location] and [teleport, targets, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[17:54:15] [main/INFO] (Minecraft) Reloading ResourceManager: Default, Fabric Mods (Fabric Tool Attribute API (v1), The Ender Mod)
+[17:54:17] [main/INFO] (Minecraft) Loaded 7 recipes
+[17:54:17] [main/INFO] (Minecraft) Loaded 927 advancements
+[17:54:18] [main/INFO] (BiomeModificationImpl) Applied 5 biome modifications to 5 of 79 new biomes in 13.34 ms
+[17:54:19] [main/INFO] (Minecraft) Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[17:54:19] [Server thread/INFO] (Minecraft) Starting integrated minecraft server version 1.16.5
+[17:54:19] [Server thread/INFO] (Minecraft) Generating keypair
+[17:54:19] [Server thread/INFO] (Minecraft) Preparing start region for dimension minecraft:overworld
+[17:54:20] [main/INFO] (Minecraft) Preparing spawn area: 0%
+[17:54:20] [main/INFO] (Minecraft) Preparing spawn area: 0%
+[17:54:20] [main/INFO] (Minecraft) Preparing spawn area: 4%
+[17:54:23] [main/INFO] (Minecraft) Preparing spawn area: 83%
+[17:54:23] [main/INFO] (Minecraft) Preparing spawn area: 83%
+[17:54:23] [main/INFO] (Minecraft) Preparing spawn area: 83%
+[17:54:23] [main/INFO] (Minecraft) Preparing spawn area: 83%
+[17:54:23] [main/INFO] (Minecraft) Preparing spawn area: 83%
+[17:54:23] [main/INFO] (Minecraft) Preparing spawn area: 83%
+[17:54:24] [main/INFO] (Minecraft) Preparing spawn area: 91%
+[17:54:24] [main/INFO] (Minecraft) Preparing spawn area: 91%
+[17:54:25] [main/INFO] (Minecraft) Preparing spawn area: 91%
+[17:54:25] [main/INFO] (Minecraft) Preparing spawn area: 93%
+[17:54:26] [main/INFO] (Minecraft) Preparing spawn area: 97%
+[17:54:26] [main/INFO] (Minecraft) Time elapsed: 6701 ms
+[17:54:26] [Server thread/INFO] (Minecraft) Changing view distance to 11, from 10
+[17:54:28] [Server thread/INFO] (Minecraft) Player838[local:E:7bff8c4d] logged in with entity id 141 at (-7.438213358211793, 64.25220334025373, -29.652154338739116)
+[17:54:28] [Server thread/INFO] (Minecraft) Player838 joined the game
+[17:54:28] [main/INFO] (Minecraft) Loaded 8 advancements
+[17:54:28] [Server thread/INFO] (Minecraft) Saving and pausing game...
+[17:54:28] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[we]'/minecraft:overworld
+[17:54:29] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[we]'/minecraft:the_nether
+[17:54:29] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[we]'/minecraft:the_end
+[17:54:30] [Server thread/INFO] (Minecraft) Scanning for legacy world dragon fight...
+[17:54:30] [Server thread/INFO] (Minecraft) Found that the dragon has been killed in this world already.
+[17:54:37] [Server thread/INFO] (Minecraft) Saving and pausing game...
+[17:54:37] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[we]'/minecraft:overworld
+[17:54:38] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[we]'/minecraft:the_nether
+[17:54:38] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[we]'/minecraft:the_end
+[17:55:17] [Server thread/INFO] (Minecraft) Player838 lost connection: Disconnected
+[17:55:17] [Server thread/INFO] (Minecraft) Player838 left the game
+[17:55:17] [Server thread/INFO] (Minecraft) Stopping singleplayer server as player logged out
+[17:55:17] [Server thread/INFO] (Minecraft) Stopping server
+[17:55:17] [Server thread/INFO] (Minecraft) Saving players
+[17:55:17] [Server thread/INFO] (Minecraft) Saving worlds
+[17:55:17] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[we]'/minecraft:overworld
+[17:55:17] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (we): All chunks are saved
+[17:55:17] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[we]'/minecraft:the_nether
+[17:55:17] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[17:55:17] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[we]'/minecraft:the_end
+[17:55:17] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[17:55:17] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (we): All chunks are saved
+[17:55:17] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[17:55:17] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[17:55:17] [main/INFO] (Minecraft) [STDOUT]: This line is printed by an example mod mixin!
+[17:55:18] [main/INFO] (Minecraft) Stopping!

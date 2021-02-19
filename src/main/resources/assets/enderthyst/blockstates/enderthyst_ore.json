@@ -1,0 +1,7 @@
+{
+    "variants": {
+        "": {
+            "model": "enderthyst:block/enderthyst_ore"
+        }
+    }
+}
